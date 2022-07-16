@@ -2,12 +2,15 @@ import React from 'react'
 import Header from '../Header/Header'
 import Sidebar from '../Sidebar/Sidebar'
 
-const Layout = () => {
+const Layout = ({children}) => {
   return (
-    <div>
+    <>
         <Header />
         <Sidebar />
-    </div>
+        <main>
+        {children}
+        </main>
+    </>
   )
 }
 
