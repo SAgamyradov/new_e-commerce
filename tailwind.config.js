@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation:{
+        bounce: 'bounce 1.3s infinite'
+      },
       fontFamily:{
         'montserrat-bold':["Montserrat-Bold"],
         'montserrat-medium':["Montserrat-Medium"],

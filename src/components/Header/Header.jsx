@@ -4,6 +4,7 @@ import {BsPersonCircle} from "react-icons/bs"
 
 import {MdSearch} from "react-icons/md"
 
+
 const Header = () => {
 
   return (
@@ -11,7 +12,8 @@ const Header = () => {
        
 
        {/* GOZLEG */}
-       <div className="bg-slate-100 mx-8 w-full flex justify-center items-center rounded-2xl">
+      
+       <div className="bg-slate-100  w-full mx-9 md:w-full flex justify-center items-center rounded-2xl">
         <MdSearch className="text-xl xl:text-3xl ml-2 animate-bounce" />
         <input
           type="text"
@@ -20,10 +22,10 @@ const Header = () => {
         />
       </div>
         
-        <BsMoonStars size={32} className='text-sm xl:text-3xl mx-5'/>
+        <BsMoonStars size={36} className='text-sm xl:text-3xl mx-2 '/>
 
         <div className='flex items-center'>
-            <BsPersonCircle size={32} className=' text-lg xl:text-3xl mx-5'/>
+            <BsPersonCircle size={32} className=' text-lg xl:text-3xl mx-3'/>
             <h1 className='font-montserrat-medium mx-8 hidden md:block'>Agza_bol</h1>
             
         </div>
