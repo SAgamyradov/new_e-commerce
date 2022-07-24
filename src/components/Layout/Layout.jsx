@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar/Navigation'
 
 const Layout = ({children}) => {
   return (
-    <>
+    <div className='flex'>
        
         <Header />
         <Sidebar />
@@ -14,7 +14,7 @@ const Layout = ({children}) => {
         {children}
         </main>
         <Content />
-    </>
+    </div>
   )
 }
 

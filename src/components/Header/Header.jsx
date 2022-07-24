@@ -15,7 +15,7 @@ const Header = () => {
        {/* GOZLEG */}
       
        <div className="bg-slate-100  w-full mx-9 md:w-full flex justify-center items-center rounded-2xl">
-        <MdSearch className="text-xl xl:text-3xl ml-2 animate-bounce" />
+        <MdSearch className="text-xl xl:text-3xl ml-2" />
         <input
           type="text"
           placeholder="Gözleg..."

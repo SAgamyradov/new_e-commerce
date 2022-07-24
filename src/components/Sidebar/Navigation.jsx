@@ -17,7 +17,7 @@ const Navigation = () => {
   const toggle = () => setOpen(!open)
   return (
     <div className='flex '>
-    <div className={`${open ? 'w-0' : 'w-64'} lg:block duration-700 h-screen bg-white `}>
+    <div className={`${open ? 'w-0' : 'w-64'}  duration-700  bg-white `}>
       <CgController size={25} className={`${!open && "rotate-180 duration-300"} md:hidden
        lg:hidden absolute cursor-pointer   left-2 w-7 top-3 `} 
         onClick={toggle} />
@@ -26,32 +26,32 @@ const Navigation = () => {
       <NavLink to={'/'}
         className={` flex items-center  mx-4 mt-7 p-3 w-60 font-montserrat-medium 
          hover:bg-yellow-200  hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
-          <FaHome className='mx-1'/>
+          <FaHome size={22} className='mx-1'/>
           Bas sahypa
       </NavLink>
 
       <NavLink to={'/door'} 
       className={` flex items-center  mx-4 mt-1 p-3 w-60 font-montserrat-medium
        hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
-        <BsDoorClosed className='mx-1'/>
+        <BsDoorClosed size={20} className='mx-1'/>
       Agac gapy
       </NavLink>
 
       <NavLink to={'/'} className={`flex items-center  mx-4 mt-1 p-3 w-60 font-montserrat-medium 
         hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
-        <BsFillDoorOpenFill className='mx-1'/>  
+        <BsFillDoorOpenFill size={20} className='mx-1'/>  
         Demir gapy
       </NavLink>
 
       <NavLink to={'/'} className={`flex items-center mx-4 mt-1 p-3 w-60 font-montserrat-medium
       hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
-        <AiOutlineShoppingCart className='mx-1'/>
+        <AiOutlineShoppingCart size={20} className='mx-1'/>
         Magazynlar
       </NavLink>
      
      <NavLink to={'/'} className={`flex items-center mx-4 mt-1 p-3 w-60 font-montserrat-medium 
      hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
-      <BsBasket2 className='mx-2'/>
+      <BsBasket2 size={20} className='mx-2'/>
       Sebedim
      </NavLink>
       
