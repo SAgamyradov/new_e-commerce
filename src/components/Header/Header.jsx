@@ -8,7 +8,8 @@ import {MdSearch} from "react-icons/md"
 const Header = () => {
 
   return (
-    <div className=' absolute top-0 left-0 xl:left-64 flex items-center justify-between right-0 p-2 xl:p-4 text-slate-600 bg-white text-sm font-montserrat-medium'>
+    <div className=' absolute top-0 left-0 xl:left-64 flex items-center justify-between right-0 p-2 xl:p-4
+     text-slate-600 bg-white text-sm font-montserrat-medium'>
        
 
        {/* GOZLEG */}

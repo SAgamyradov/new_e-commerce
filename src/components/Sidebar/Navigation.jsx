@@ -4,12 +4,12 @@ import {FaHome} from 'react-icons/fa'
 import
       {BsDoorClosed, 
        BsFillDoorOpenFill,
-       BsBasket2,
-                  }
+       BsBasket2}
         from "react-icons/bs"
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { NavLink } from 'react-router-dom'
-import logoImage from '../../assets/ALTYN.jpg'
+import logoImage from '../../assets/ALTYN logo.jpg'
+import logoOguz from '../../assets/Oguzly.png'
 
 
 const Navigation = () => {
@@ -18,7 +18,8 @@ const Navigation = () => {
   return (
     <div className='flex '>
     <div className={`${open ? 'w-0' : 'w-64'} lg:block duration-700 h-screen bg-white `}>
-      <CgController size={25} className={`${!open && "rotate-180 duration-300"} md:hidden lg:hidden absolute cursor-pointer   left-2 w-7 top-3 `} 
+      <CgController size={25} className={`${!open && "rotate-180 duration-300"} md:hidden
+       lg:hidden absolute cursor-pointer   left-2 w-7 top-3 `} 
         onClick={toggle} />
         <img alt='' src={logoImage} className={`mt-16 md:w-36 h-16  mx-9 md:mt-7 ${open && "scale-0"}`}/>
       
@@ -29,7 +30,7 @@ const Navigation = () => {
           Bas sahypa
       </NavLink>
 
-      <NavLink to={'/'} 
+      <NavLink to={'/door'} 
       className={` flex items-center  mx-4 mt-1 p-3 w-60 font-montserrat-medium
        hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
         <BsDoorClosed className='mx-1'/>
@@ -50,10 +51,11 @@ const Navigation = () => {
      
      <NavLink to={'/'} className={`flex items-center mx-4 mt-1 p-3 w-60 font-montserrat-medium 
      hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 rounded-l-full duration-500 ${open && "scale-0"}`}>
-      <BsBasket2 className='mx-1'/>
+      <BsBasket2 className='mx-2'/>
       Sebedim
      </NavLink>
       
+      <img alt='' src={logoOguz} className='w-24 mx-16 mt-72'/>
     </div>
     </div>
   )
