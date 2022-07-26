@@ -3,7 +3,7 @@ import door from '../../assets/door.jpg'
 
 const Content = () => {
   return (
-    <div className='border-1 p-4  '>
+    <div className='border-1 p-3 h-72'>
         <img alt='' src={door} className=' mt-14 rounded '/>
     </div>
   )
