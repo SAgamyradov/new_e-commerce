@@ -16,7 +16,7 @@ const Header = () => {
 
        {/* GOZLEG */}
       
-       <div className=" dark:bg-slate-800 bg-slate-100 w-full mx-9 md:w-full flex justify-center items-center rounded-2xl">
+       <div className="  bg-slate-100 w-full mx-9 md:w-full flex justify-center items-center rounded-2xl">
         <MdSearch className="text-xl xl:text-3xl ml-2" />
         <input
           type="text"
