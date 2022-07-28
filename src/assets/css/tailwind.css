@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body{
-  background-color: rgb(215, 220, 210);
-}
+
 
 @font-face{
   font-family: Montserrat-Bold;
