@@ -7,13 +7,14 @@ const Layout = ({children}) => {
   return (
     <div className='flex'>
        
-        <Header />
+       
+       <Header />
         <Sidebar />
-        
+        <Content />
         <main>
         {children}
         </main>
-        <Content />
+       
     </div>
   )
 }
