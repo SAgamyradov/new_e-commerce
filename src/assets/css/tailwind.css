@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 
-
+html{
+  background-color: antiquewhite;
+}
 @font-face{
   font-family: Montserrat-Bold;
   src: url("../font/Montserrat-Bold.ttf")

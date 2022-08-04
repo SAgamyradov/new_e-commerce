@@ -1,11 +1,13 @@
 import React from 'react'
-import door from '../../assets/door.jpg'
 
-const Content = () => {
+
+const Content = ({children}) => {
+
+
   return (
-    <div className='border-1 p-3 bg-slate-200'>
-        <img alt='' src={door} className=' mt-14 rounded '/>
-    </div>
+    <section className='absolute top-16 left-0 xl:left-64 right-3 p-2'>
+        {children}
+    </section>
   )
 }
 
