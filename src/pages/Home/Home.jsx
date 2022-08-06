@@ -13,9 +13,9 @@ const Home = () => {
     <Layout>
       <Content>
       <div className={`${dark && "dark"}  bg-fixed border-1 p-3 dark:bg-black`}>
-        <img alt='' src={door} className='rounded items-center w-[85rem] h-[50rem]'/>
-        <div className='flex font-montserratAlternates-medium text-xl text-yellow-800'>
-        <NavLink to={'/wood'} className='border-2 flex mx-36 m-2 p-5 w-96 bg-slate-50 rounded-2xl'>
+        <img alt='' src={door} className='rounded items-center w-[85rem] '/>
+        <div className='flex font-montserratAlternates-medium text-sm md:text-xl text-yellow-800'>
+        <NavLink to={'/wood'} className='border-2 flex md:mx-36  m-3 p-5 w-96 bg-slate-50 rounded-2xl'>
           <BsDoorClosed size={44} className='border bg-yellow-300 p-2 -mt-1 mx-1 rounded'/>
           Agaç gapylar
         </NavLink>

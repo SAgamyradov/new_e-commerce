@@ -20,7 +20,7 @@ const Navigation = () => {
   return (
     <div className={`flex  ${dark && "dark"} font-montserratAlternates-medium text-[0.95rem]`}>
     <div>
-      <img alt='' src={logoImage} className='-mt-3 w-56 h-36 md:w-60 md:h-40   md:-mt-5'/>
+      <img alt=''  src={logoImage} className='-mt-3 w-56 h-36 md:w-60 md:h-40   md:-mt-5'/>
       
       <NavLink to={'/'}
         className={` flex items-center  mx-6 -mt-4 p-3 w-[14.5rem]  rounded-l-full
@@ -59,8 +59,8 @@ const Navigation = () => {
       Sebedim
      </NavLink>
       
-      <img alt='' src={logoLight} className='w-20 mx-20 mt-80 dark:hidden'/>
-      <img alt='' src={logoDark}  className='hidden dark:block w-20 mx-20 mt-80'/>
+      <img alt='' src={logoLight} className='absolute left-20 bottom-5 w-20 dark:hidden'/>
+      <img alt='' src={logoDark}  className='hidden dark:block absolute left-20 bottom-5 w-20'/>
     </div>
   
     </div>
