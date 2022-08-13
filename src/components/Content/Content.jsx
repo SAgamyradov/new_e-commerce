@@ -1,11 +1,13 @@
 import React from 'react'
 
 
-const Content = ({children}) => {
+const Content = ({children, dark}) => {
+  
 
 
   return (
-    <section className='absolute top-20 left-0 bottom-3 overflow-y-scroll xl:left-64 right-1 p-2'>
+    <section className={`${dark && "dark"} absolute top-14 md:top-20 left-0 bottom-0 overflow-y-scroll 
+    xl:left-[15.1rem] right-0 p-2 bg-slate-700 dark:bg-black`}>
         {children}
     </section>
   )

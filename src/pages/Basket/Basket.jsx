@@ -5,11 +5,11 @@ import Layout from '../../components/Layout/Layout'
 const Basket = () => {
   return (
     <div>
-        <Layout>
-            <Content>
-                
-            </Content>
-        </Layout>
+      <Layout>
+        <Content>
+
+        </Content>
+      </Layout>
     </div>
   )
 }
