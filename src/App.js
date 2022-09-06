@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getProductsAction } from "./actions/product.action";
+import { getProductsAction } from "./store/actions/product.action";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="container mx-auto">
       {
-        products.map((product, index) => {
+        products?.map((product, index) => {
           return (
             <img key={index} src={product.image} className="my-5" />
           )

@@ -1,23 +1,21 @@
-import React, { useState } from 'react'
-import Header from '../Header/Header'
-import Sidebar from '../Sidebar/Sidebar'
+import React, { useState } from "react";
+import Header from "../Header/Header";
+import Sidebar from "../Sidebar/Sidebar";
 
-const Layout = ({children}) => {
-  const[dark, setDark] = useState()
-  const darkMode = () =>{
-    setDark(!dark)
-  }
+const Layout = ({ children }) => {
+  const [dark, setDark] = useState();
+  const darkMode = () => {
+    setDark(!dark);
+  };
 
   return (
-    <>
-      <Header dark={dark} darkMode={darkMode}/>
-      <Sidebar dark={dark} darkMode={darkMode}/>
-    
-        <main>
-        {children}
-        </main>
-      </>
-  )
-}
+    <div className='font-montserratAlternates-medium'>
+      <Header dark={dark} darkMode={darkMode} />
+      <Sidebar dark={dark} darkMode={darkMode} />
 
-export default Layout
+      <main>{children}</main>
+    </div>
+  );
+};
+
+export default Layout;

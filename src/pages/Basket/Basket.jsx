@@ -1,17 +1,15 @@
-import React from 'react'
-import Content from '../../components/Content/Content'
-import Layout from '../../components/Layout/Layout'
+import React, { useState } from "react";
+import Content from "../../components/Content/Content";
+import Layout from "../../components/Layout/Layout";
 
 const Basket = () => {
   return (
     <div>
       <Layout>
-        <Content>
-
-        </Content>
+        <Content></Content>
       </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default Basket
+export default Basket;

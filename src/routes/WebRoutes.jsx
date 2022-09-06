@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Basket from '../pages/Basket/Basket'
 import Home from '../pages/Home/Home'
 import Iron from '../pages/Iron/Iron'
@@ -8,13 +8,16 @@ import Wood from '../pages/Wood/Wood'
 
 const WebRoutes = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/wood' element={<Wood />} />
-      <Route path='/iron' element={<Iron />} />
-      <Route path='/shops' element={<Shops />} />
-      <Route path='/basket' element={<Basket />} />
-    </Routes>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/wood' element={<Wood />} />
+        <Route path='/iron' element={<Iron />} />
+        <Route path='/shops' element={<Shops />} />
+        <Route path='/basket' element={<Basket />} />
+      </Routes>
+    </Router>
+
   )
 }
 

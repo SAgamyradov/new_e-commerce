@@ -6,10 +6,11 @@ import { GET_PRODUCTS } from '../types/product.types';
 
 function* getProductsWorker() {
     try {
-        const res = yield call(api.get, 'front/slides')
+        const res = yield call(api.get, 'https://jsonplaceholder.typicode.com/todos?_limit=10')
 
-        yield put(setProductsAction(res.data.data))
-    } catch (err) {
+        yield put(setProductsAction(res.data))
+    }
+    catch (err) {
         console.log(err);
     }
 }
