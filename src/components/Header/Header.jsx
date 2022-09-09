@@ -26,18 +26,13 @@ const Header = ({ dark }) => {
           />
         </div>
         <div></div>
-        <NavLink to={"/basket"}>
-          <BsBasket2
-            size={32}
-            className='text-md xl:text-3xl mx-3 dark:text-slate-300'
+
+        <NavLink to={"/about"} className=''>
+          <FcAbout
+            size={30}
+            className=' text-lg xl:text-3xl mx-2  dark:text-slate-300'
           />
         </NavLink>
-        <div className=''>
-          <FcAbout
-            size={32}
-            className=' text-lg xl:text-3xl mx-4 mt-1 dark:text-slate-300'
-          />
-        </div>
       </div>
     </div>
   );

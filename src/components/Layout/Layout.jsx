@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Content from "../Content/Content";
 import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 
@@ -12,6 +13,7 @@ const Layout = ({ children }) => {
     <div className='font-montserratAlternates-medium'>
       <Header dark={dark} darkMode={darkMode} />
       <Sidebar dark={dark} darkMode={darkMode} />
+      <Content dark={dark} darkMode={darkMode}/>
 
       <main>{children}</main>
     </div>

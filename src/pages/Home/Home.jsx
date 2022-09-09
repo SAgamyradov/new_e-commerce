@@ -37,12 +37,12 @@ const Home = () => {
           <img
             alt=''
             src={door}
-            className='rounded items-center w-[85rem] md:mx-11'
+            className='rounded items-center w-[85rem] md:mx-2'
           />
           <div className='flex text-sm md:text-xl text-yellow-800'>
             <NavLink
               to={"/wood"}
-              className=' border-2 flex md:mx-52  m-3 p-5 md:w-96 bg-slate-50 rounded-2xl'
+              className=' border-2 flex md:mx-40  m-3 p-5 md:w-96 bg-slate-50 rounded-2xl'
             >
               <BsDoorClosed
                 size={44}
@@ -63,98 +63,173 @@ const Home = () => {
             </NavLink>
           </div>
 
-          <div className='grid grid-cols-2 md:grid md:grid-cols-3 my-4 md:mx-20 font-montserrat-bold'>
+          <NavLink
+            to={"/about"}
+            className='grid grid-cols-2 gap-4 md:grid md:grid-cols-3 my-4 md:mx-20 font-montserrat-medium'
+          >
             <div className='img dark:bg-slate-800'>
               <img src={img6} />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Steel Gapy - 5340TMT</p>
+              <p className='nameDoor'>
+                Steel Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  4500 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img7} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Fiberglas Gapy - 9500TMT</p>
+              <p className='nameDoor'>
+                Fiberglas Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  8000 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img8} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Flush Gapy - 8000TMT</p>
+              <p className='nameDoor'>
+                Flush Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  5000 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img9} />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Battened Gapy - 6450TMT</p>
+              <p className='nameDoor'>
+                Battened Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  4500 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img10} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Steel Gapy - 7200TMT</p>
+              <p className='nameDoor'>
+                Steel Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  3400 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img11} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Ledged Gapy - 5550TMT</p>
+              <p className='nameDoor'>
+                Ledged Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  8900 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img12} />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Battened Gapy - 4500TMT</p>
+              <p className='nameDoor'>
+                Battened Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  4300 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img1} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Steel Gapy - 1900TMT</p>
+              <p className='nameDoor'>
+                Steel Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  7800 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img2} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Fiberglas Gapy - 2000TMT</p>
+              <p className='nameDoor'>
+                Fiberglas Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  6700 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img3} />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Ledged Gapy - 1750TMT</p>
+              <p className='nameDoor'>
+                Ledged Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  4200 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img4} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Glass Gapy - 2100TMT</p>
+              <p className='nameDoor'>
+                Glass Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  2200 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img5} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Battened Gapy - 1500TMT</p>
+              <p className='nameDoor'>
+                Battened Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  5500 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img13} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Steel Gapy - 9000TMT</p>
+              <p className='nameDoor'>
+                Steel Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  7600 TMT
+                </p>
+              </p>
             </div>{" "}
             <div className='img dark:bg-slate-800'>
               <img src={img14} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Fiberglas Gapy - 2500TMT</p>
+              <p className='nameDoor'>
+                Fiberglas Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  3300 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img15} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Glass Gapy - 1500TMT</p>
+              <p className='nameDoor'>
+                Glass Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  8400 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img16} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Battened Gapy - 4500TMT</p>
+              <p className='nameDoor'>
+                Battened Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  5500 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img17} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Flush Gapy - 5500TMT</p>
+              <p className='nameDoor'>
+                Flush Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  2400 TMT
+                </p>
+              </p>
             </div>
             <div className='img dark:bg-slate-800'>
               <img src={img18} className='rounded' />
-              <MdAddShoppingCart className='addIcon' />
-              <p className='nameDoor'>Battened Gapy - 3000TMT</p>
+              <p className='nameDoor'>
+                Battened Gapy
+                <p className='font-montserratAlternates-bold md:text-lg'>
+                  7600 TMT
+                </p>
+              </p>
             </div>
-          </div>
+          </NavLink>
         </div>
       </Content>
     </Layout>

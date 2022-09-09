@@ -1,23 +1,18 @@
-import React from 'react'
-import { FaHome } from 'react-icons/fa'
+import React from "react";
+import { FaHome } from "react-icons/fa";
 import {
-BsDoorClosed,
-BsFillDoorOpenFill,
-BsMoonStars,
-BsFillSunFill
-}
-  from "react-icons/bs"
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { NavLink } from 'react-router-dom'
-import logoLight from '../../assets/Oguzly.png'
-import logoDark from '../../assets/Oguzly2.png'
-import logoImage from '../../assets/ALTYN logo.png'
-
-
+  BsDoorClosed,
+  BsFillDoorOpenFill,
+  BsMoonStars,
+  BsFillSunFill,
+} from "react-icons/bs";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
+import logoLight from "../../assets/Oguzly.png";
+import logoDark from "../../assets/Oguzly2.png";
+import logoImage from "../../assets/ALTYN logo.png";
 
 const Navigation = ({ dark, darkMode }) => {
-
-
   return (
     <div
       className={`flex  ${
@@ -87,6 +82,6 @@ const Navigation = ({ dark, darkMode }) => {
       </div>
     </div>
   );
-}
+};
 
-export default Navigation
+export default Navigation;

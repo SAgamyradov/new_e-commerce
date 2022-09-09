@@ -4,21 +4,21 @@
 
 @layer base {
   .img {
-    @apply md:w-[25rem] md:h-[36rem]  border p-3 bg-white  mx-1 my-2 rounded-xl
+    @apply md:w-[22rem] md:h-[33rem]  border p-3 bg-white rounded-xl;
   }
 
-  .addIcon{
-    @apply border rounded-lg p-1 text-3xl md:text-4xl mx-28 mt-4 md:mx-[21rem] hover:scale-150 duration-300 cursor-pointer
+  .addIcon {
+    @apply border rounded-lg p-1 text-3xl md:text-4xl mx-28 mt-4 md:mx-[18rem] hover:scale-150 duration-300 cursor-pointer;
   }
 
-  .nameDoor{
-    @apply text-xs md:text-xl -mt-8 mx-2
+  .nameDoor {
+    @apply text-xs md:text-xl mt-4 mx-2;
   }
 
-  .navlink{
+  .navlink {
     @apply flex items-center  mx-6 mt-[0.4rem]  p-3 w-[14.5rem]  rounded-l-full
        hover:bg-yellow-200 hover:text-slate-700 text-yellow-800 dark:text-slate-300
-       dark:hover:text-slate-900 duration-500
+       dark:hover:text-slate-900 duration-500;
   }
   @font-face {
     font-family: Montserrat-Bold;
