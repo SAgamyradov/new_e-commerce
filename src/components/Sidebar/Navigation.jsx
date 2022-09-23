@@ -12,11 +12,11 @@ import logoLight from "../../assets/Oguzly.png";
 import logoDark from "../../assets/Oguzly2.png";
 import logoImage from "../../assets/ALTYN logo.png";
 
-const Navigation = ({ dark, darkMode }) => {
+const Navigation = ({ mode, darkMode }) => {
   return (
     <div
       className={`flex  ${
-        dark && "dark"
+        mode && "dark"
       } font-montserratAlternates-medium text-[0.95rem]`}
     >
       <div>
@@ -41,9 +41,9 @@ const Navigation = ({ dark, darkMode }) => {
           Demir gapy
         </NavLink>
 
-        <NavLink to={"/shops"} className='navlink font-montserrat-medium'>
+        <NavLink to={"/shops"} className='navlink'>
           <AiOutlineShoppingCart size={20} className='mx-1' />
-          Magazynlar
+          Dükanlar
         </NavLink>
 
         <button
@@ -51,7 +51,7 @@ const Navigation = ({ dark, darkMode }) => {
           className='border bg-slate-100 shadow-sm shadow-slate-500 h-7 w-20 
       rounded-full absolute bottom-20 left-20'
         >
-          {dark ? (
+          {mode ? (
             <BsFillSunFill
               size={27}
               className='rounded-full mx-[3.2rem] relative p-1 bg-yellow-500
@@ -66,12 +66,14 @@ const Navigation = ({ dark, darkMode }) => {
           )}
         </button>
 
-        {dark ? (
-          <img
-            alt=''
-            src={logoDark}
-            className='absolute left-20 bottom-5 w-20'
-          />
+        {mode === "dark" ? (
+          "light"(
+            <img
+              alt=''
+              src={logoDark}
+              className='absolute left-20 bottom-5 w-20'
+            />
+          )
         ) : (
           <img
             alt=''

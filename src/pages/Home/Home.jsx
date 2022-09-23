@@ -4,7 +4,6 @@ import Layout from "../../components/Layout/Layout";
 import door from "../../assets/door.jpg";
 import useToggle from "../../hooks/useToggle";
 import { BsDoorClosed, BsFillDoorOpenFill } from "react-icons/bs";
-import { MdAddShoppingCart } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import img1 from "../../assets/ImgGapy/1.jpg";
 import img2 from "../../assets/ImgGapy/2.jpg";
@@ -25,50 +24,54 @@ import img16 from "../../assets/ImgGapy/16.jpg";
 import img17 from "../../assets/ImgGapy/17.jpg";
 import img18 from "../../assets/ImgGapy/18.jpg";
 
-const Home = () => {
-  const { dark, darkMode } = useToggle();
+const Home = ({ mode, darkMode }) => {
+  // const { dark, darkMode } = useToggle();
 
   return (
     <Layout>
-      <Content dark={dark} darkMode={darkMode}>
+      <Content dark={mode} darkMode={darkMode}>
         <div
-          className={`${dark && "dark"}  bg-fixed border-1  p-3 dark:bg-black`}
+          className={`${
+            mode && "dark"
+          }  border-1 flex flex-col justify-center items-center  p-3 dark:bg-black`}
         >
-          <img
-            alt=''
-            src={door}
-            className='rounded items-center w-[85rem] md:mx-2'
-          />
-          <div className='flex text-sm md:text-xl text-yellow-800'>
+          <div className='flex items-center justify-center'>
+            <img
+              alt=''
+              src={door}
+              className='rounded-lg xl:w-[90rem] w-full mx-5 my-2'
+            />
+          </div>
+          <div className='flex items-center justify-center text-sm xl:text-xl text-yellow-800'>
             <NavLink
               to={"/wood"}
-              className=' border-2 flex md:mx-40  m-3 p-5 md:w-96 bg-slate-50 rounded-2xl'
+              className='flex m-3 p-5 xl:w-96 bg-slate-50 dark:bg-slate-900 rounded-lg dark:shadow-lg dark:shadow-slate-700'
             >
               <BsDoorClosed
                 size={44}
-                className='border bg-yellow-300 p-2 -mt-1 mx-1 rounded'
+                className='bg-yellow-300 p-2 -mt-1 mx-1 rounded-lg'
               />
-              Agaç gapylar
+              <p className='dark:text-slate-300'>Agaç gapylar</p>
             </NavLink>
 
             <NavLink
               to={"/iron"}
-              className='border-2 flex m-3 p-5 md:w-96 bg-slate-50 rounded-2xl'
+              className='flex m-3 p-5 mx-9 xl:w-96 bg-slate-50 dark:bg-slate-900 rounded-lg dark:shadow-lg dark:shadow-slate-700'
             >
               <BsFillDoorOpenFill
                 size={44}
-                className='border bg-yellow-300 p-2 -mt-1 mx-1 rounded'
+                className='bg-yellow-300 p-2 -mt-1 mx-1 rounded-lg'
               />
-              Demir gapylar
+              <p className='dark:text-slate-300'>Demir gapylar</p>
             </NavLink>
           </div>
 
           <NavLink
             to={"/about"}
-            className='grid grid-cols-2 gap-4 md:grid md:grid-cols-3 my-4 md:mx-20 font-montserrat-medium'
+            className='grid space-x-3 grid-cols-10 xl:grid-cols-6 font-montserrat-medium'
           >
             <div className='img dark:bg-slate-800'>
-              <img src={img6} />
+              <img src={img6} className='rounded-lg' />
               <p className='nameDoor'>
                 Steel Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -77,7 +80,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img7} className='rounded' />
+              <img src={img7} className='rounded-lg' />
               <p className='nameDoor'>
                 Fiberglas Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -86,7 +89,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img8} className='rounded' />
+              <img src={img8} className='rounded-lg' />
               <p className='nameDoor'>
                 Flush Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -104,7 +107,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img10} className='rounded' />
+              <img src={img10} className='rounded-lg' />
               <p className='nameDoor'>
                 Steel Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -113,7 +116,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img11} className='rounded' />
+              <img src={img11} className='rounded-lg' />
               <p className='nameDoor'>
                 Ledged Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -131,7 +134,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img1} className='rounded' />
+              <img src={img1} className='rounded-lg' />
               <p className='nameDoor'>
                 Steel Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -140,7 +143,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img2} className='rounded' />
+              <img src={img2} className='rounded-lg' />
               <p className='nameDoor'>
                 Fiberglas Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -158,7 +161,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img4} className='rounded' />
+              <img src={img4} className='rounded-lg' />
               <p className='nameDoor'>
                 Glass Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -167,7 +170,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img5} className='rounded' />
+              <img src={img5} className='rounded-lg' />
               <p className='nameDoor'>
                 Battened Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -176,7 +179,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img13} className='rounded' />
+              <img src={img13} className='rounded-lg' />
               <p className='nameDoor'>
                 Steel Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -185,7 +188,7 @@ const Home = () => {
               </p>
             </div>{" "}
             <div className='img dark:bg-slate-800'>
-              <img src={img14} className='rounded' />
+              <img src={img14} className='rounded-lg' />
               <p className='nameDoor'>
                 Fiberglas Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -194,7 +197,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img15} className='rounded' />
+              <img src={img15} className='rounded-lg' />
               <p className='nameDoor'>
                 Glass Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -203,7 +206,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img16} className='rounded' />
+              <img src={img16} className='rounded-lg' />
               <p className='nameDoor'>
                 Battened Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -212,7 +215,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img17} className='rounded' />
+              <img src={img17} className='rounded-lg' />
               <p className='nameDoor'>
                 Flush Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>
@@ -221,7 +224,7 @@ const Home = () => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={img18} className='rounded' />
+              <img src={img18} className='rounded-lg' />
               <p className='nameDoor'>
                 Battened Gapy
                 <p className='font-montserratAlternates-bold md:text-lg'>

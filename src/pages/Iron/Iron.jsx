@@ -16,7 +16,10 @@ const Iron = () => {
     <div>
       <Layout>
         <Content>
-          <NavLink to={'/about'} className='grid grid-cols-2 gap-4 md:grid md:grid-cols-3 my-4 md:mx-20 font-montserrat-medium'>
+          <NavLink
+            to={"/about"}
+            className='grid space-x-3 grid-cols-10 xl:grid-cols-6 font-montserrat-medium'
+          >
             <div className='img dark:bg-slate-800'>
               <img src={img19} />
               <p className='nameDoor'>
@@ -71,7 +74,7 @@ const Iron = () => {
                 </p>
               </p>
             </div>
-           
+
             <div className='img dark:bg-slate-800'>
               <img src={img15} className='rounded' />
               <p className='nameDoor'>
@@ -81,7 +84,7 @@ const Iron = () => {
                 </p>
               </p>
             </div>
-            
+
             <div className='img dark:bg-slate-800'>
               <img src={img17} className='rounded' />
               <p className='nameDoor'>
@@ -91,7 +94,6 @@ const Iron = () => {
                 </p>
               </p>
             </div>
-            
           </NavLink>
         </Content>
       </Layout>

@@ -1,22 +1,21 @@
 import React from "react";
 
-import { BsBasket2 } from "react-icons/bs";
 import { FcAbout } from "react-icons/fc";
 import { MdSearch } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const Header = ({ dark }) => {
+const Header = ({ mode }) => {
   return (
-    <div className={`${dark && "dark"} container mx-auto`}>
+    <div className={`${mode && "dark"} container mx-auto`}>
       <div
-        className={` absolute top-0 left-0 xl:left-64 flex  items-center justify-between right-0 p-2 xl:p-4
-     text-slate-600 bg-slate-50 text-sm dark:bg-slate-900 duration-500 font-montserrat-medium `}
+        className='absolute top-0 left-0 xl:left-64 flex  items-center justify-between right-0 p-2 xl:p-4
+     text-slate-600 bg-slate-50 text-sm dark:bg-slate-900 duration-500 font-montserrat-medium'
       >
         {/* GOZLEG */}
 
         <div
           className=' mx-9 md:w-full flex justify-center items-center rounded-2xl
-        hover:shadow-sm shadow-slate-400 duration-300 '
+         shadow-slate-400 duration-300 '
         >
           <MdSearch className='absolute left-14 text-xl xl:text-3xl  dark:text-slate-400' />
           <input
