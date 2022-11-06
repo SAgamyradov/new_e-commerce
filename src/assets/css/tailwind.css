@@ -4,7 +4,7 @@
 
 @layer base {
   .img {
-    @apply col-span-5 xl:col-span-2 my-5 p-3 shadow-sm dark:shadow-lg duration-300 dark:shadow-slate-700 bg-white rounded-lg;
+    @apply col-span-5 xl:col-span-2 p-2 shadow-sm dark:shadow-lg duration-300 dark:shadow-slate-700 bg-white rounded-lg;
   }
 
   .addIcon {

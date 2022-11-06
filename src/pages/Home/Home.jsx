@@ -2,7 +2,6 @@ import React from "react";
 import Content from "../../components/Content/Content";
 import Layout from "../../components/Layout/Layout";
 import door from "../../assets/door.jpg";
-import useToggle from "../../hooks/useToggle";
 import { BsDoorClosed, BsFillDoorOpenFill } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import img1 from "../../assets/ImgGapy/1.jpg";
@@ -33,7 +32,7 @@ const Home = ({ mode, darkMode }) => {
         <div
           className={`${
             mode && "dark"
-          }  border-1 flex flex-col justify-center items-center  p-3 dark:bg-black`}
+          }  border-1 flex flex-col justify-center items-center  dark:bg-black`}
         >
           <div className='flex items-center justify-center'>
             <img
@@ -42,25 +41,25 @@ const Home = ({ mode, darkMode }) => {
               className='rounded-lg xl:w-[90rem] w-full mx-5 my-2'
             />
           </div>
-          <div className='flex items-center justify-center text-sm xl:text-xl text-yellow-800'>
+          <div className='flex items-center justify-center ml-6 text-[0.7rem] xl:text-xl text-yellow-800'>
             <NavLink
               to={"/wood"}
-              className='flex m-3 p-5 xl:w-96 bg-slate-50 dark:bg-slate-900 rounded-lg dark:shadow-lg dark:shadow-slate-700'
+              className='flex m-3 p-3 xl:p-5 xl:w-96 bg-slate-50 dark:bg-slate-900 rounded-lg dark:shadow-lg dark:shadow-slate-700'
             >
               <BsDoorClosed
-                size={44}
-                className='bg-yellow-300 p-2 -mt-1 mx-1 rounded-lg'
+                size={37}
+                className='bg-yellow-300 p-1 -mt-1 mx-1 rounded-lg'
               />
               <p className='dark:text-slate-300'>Agaç gapylar</p>
             </NavLink>
 
             <NavLink
               to={"/iron"}
-              className='flex m-3 p-5 mx-9 xl:w-96 bg-slate-50 dark:bg-slate-900 rounded-lg dark:shadow-lg dark:shadow-slate-700'
+              className='flex m-3 p-3 xl:p-5 mx-9 xl:w-96 bg-slate-50 dark:bg-slate-900 rounded-lg dark:shadow-lg dark:shadow-slate-700'
             >
               <BsFillDoorOpenFill
-                size={44}
-                className='bg-yellow-300 p-2 -mt-1 mx-1 rounded-lg'
+                size={37}
+                className='bg-yellow-300 p-1 -mt-1 mx-1 rounded-lg'
               />
               <p className='dark:text-slate-300'>Demir gapylar</p>
             </NavLink>
@@ -68,7 +67,7 @@ const Home = ({ mode, darkMode }) => {
 
           <NavLink
             to={"/about"}
-            className='grid space-x-3 grid-cols-10 xl:grid-cols-6 font-montserrat-medium'
+            className='grid gap-6 grid-cols-10 xl:grid-cols-6 my-10 font-montserrat-medium'
           >
             <div className='img dark:bg-slate-800'>
               <img src={img6} className='rounded-lg' />

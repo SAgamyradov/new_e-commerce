@@ -1,12 +1,24 @@
 import React from "react";
+import { BsFillSunFill } from "react-icons/bs";
 
 import { FcAbout } from "react-icons/fc";
 import { MdSearch } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const Header = ({ mode }) => {
+const Header = ({ mode, darkMode }) => {
   return (
-    <div className={`${mode && "dark"} container mx-auto`}>
+    <div className={`${mode && "dark"} `}>
+      <button
+        onClick={darkMode}
+        className='
+      rounded-full absolute  right-5'
+      >
+        <BsFillSunFill
+          size={27}
+          className=' mx-[3.2rem] relative p-1 dark:text-slate-50
+        text-slate-800'
+        />
+      </button>
       <div
         className='absolute top-0 left-0 xl:left-64 flex  items-center justify-between right-0 p-2 xl:p-4
      text-slate-600 bg-slate-50 text-sm dark:bg-slate-900 duration-500 font-montserrat-medium'

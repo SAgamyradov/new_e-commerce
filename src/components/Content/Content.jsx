@@ -5,7 +5,7 @@ const Content = ({ children, dark }) => {
     <section
       className={`${
         dark && "dark"
-      } absolute top-14 xl:top-20  bottom-0 overflow-y-scroll 
+      } absolute top-14 xl:top-20 xl:bottom-0 overflow-y-scroll 
     xl:left-64 right-0 p-2 bg-slate-200 dark:bg-black`}
     >
       {children}

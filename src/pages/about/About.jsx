@@ -12,7 +12,7 @@ const About = ({ mode }) => {
         <div
           className={`${
             mode && "dark"
-          }border bg-white dark:bg-slate-800 p-4 rounded-lg  h-[40rem] w-full text-sm xl:text-base`}
+          }border bg-white dark:bg-slate-800 p-4 rounded-lg  h-screen w-full text-sm xl:text-base`}
         >
           <div className=''>
             <div className='grid  md:grid-cols-2'>
@@ -27,7 +27,7 @@ const About = ({ mode }) => {
                 consumer-to-business.
               </p>
 
-              <div className='font-montserrat-bold flex flex-col items-start justify-start mt-3 dark:text-slate-300'>
+              <div className='font-montserrat-bold flex flex-col items-start justify-start mt-8 xl:mt-0 dark:text-slate-300'>
                 <p>Biziň salgymyz: Aşgabat ş</p>
                 <p className='mt-2'>Habarlaşmak üçin: +99361432761</p>
               </div>

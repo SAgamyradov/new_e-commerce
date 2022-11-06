@@ -3,8 +3,8 @@ import { FaHome } from "react-icons/fa";
 import {
   BsDoorClosed,
   BsFillDoorOpenFill,
-  BsMoonStars,
   BsFillSunFill,
+  BsMoonStars,
 } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
@@ -48,32 +48,22 @@ const Navigation = ({ mode, darkMode }) => {
 
         <button
           onClick={darkMode}
-          className='border bg-slate-100 shadow-sm shadow-slate-500 h-7 w-20 
-      rounded-full absolute bottom-20 left-20'
+          className='
+      rounded-full absolute bottom-20 left-12'
         >
-          {mode ? (
-            <BsFillSunFill
-              size={27}
-              className='rounded-full mx-[3.2rem] relative p-1 bg-yellow-500
-        text-slate-50'
-            />
-          ) : (
-            <BsMoonStars
-              size={27}
-              className='rounded-full relative bg-slate-600  p-1
-            text-slate-50'
-            />
-          )}
+          <BsMoonStars
+            size={40}
+            className=' mx-[3.2rem] relative p-1 dark:text-slate-50
+        text-slate-800 duration-300'
+          />
         </button>
 
-        {mode === "dark" ? (
-          "light"(
-            <img
-              alt=''
-              src={logoDark}
-              className='absolute left-20 bottom-5 w-20'
-            />
-          )
+        {mode ? (
+          <img
+            alt=''
+            src={logoDark}
+            className='absolute left-20 bottom-5 w-20'
+          />
         ) : (
           <img
             alt=''

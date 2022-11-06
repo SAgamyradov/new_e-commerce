@@ -18,7 +18,7 @@ const Wood = () => {
         <Content>
           <NavLink
             to={"/about"}
-            className='grid space-x-3 grid-cols-10 xl:grid-cols-6 font-montserrat-medium'
+            className='grid gap-6 grid-cols-10 xl:grid-cols-6 p-1 font-montserrat-medium'
           >
             <div className='img dark:bg-slate-800'>
               <img src={img1} />

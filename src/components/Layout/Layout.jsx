@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
     }
     localStorage.setItem("mode", mode);
   }, [mode]);
+
   const darkMode = () => {
     setMode(mode === "dark" ? "light" : "dark");
   };
