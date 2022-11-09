@@ -1,27 +1,14 @@
 import React from "react";
-import { BsFillSunFill } from "react-icons/bs";
-
 import { FcAbout } from "react-icons/fc";
 import { MdSearch } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
-const Header = ({ mode, darkMode }) => {
+const Header = ({ mode }) => {
   return (
-    <div className={`${mode && "dark"} `}>
-      <button
-        onClick={darkMode}
-        className='
-      rounded-full absolute  right-5'
-      >
-        <BsFillSunFill
-          size={27}
-          className=' mx-[3.2rem] relative p-1 dark:text-slate-50
-        text-slate-800'
-        />
-      </button>
+    <div className={`${mode && "dark"} container mx-auto`}>
       <div
         className='absolute top-0 left-0 xl:left-64 flex  items-center justify-between right-0 p-2 xl:p-4
-     text-slate-600 bg-slate-50 text-sm dark:bg-slate-900 duration-500 font-montserrat-medium'
+     text-slate-600 bg-slate-50 text-sm dark:bg-slate-900 duration-500 font-montserrat-medium '
       >
         {/* GOZLEG */}
 
@@ -36,8 +23,6 @@ const Header = ({ mode, darkMode }) => {
             className='bg-slate-200 w-full dark:bg-slate-700 dark:text-slate-100 md:text-base focus:outline-none rounded-lg p-2 px-9 m-1 xl:p-2 xl:px-9'
           />
         </div>
-        <div></div>
-
         <NavLink to={"/about"} className=''>
           <FcAbout
             size={30}

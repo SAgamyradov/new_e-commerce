@@ -23,7 +23,7 @@ const Navigation = ({ mode, darkMode }) => {
         <img
           alt=''
           src={logoImage}
-          className='-mt-3 w-56 h-36 md:w-60 md:h-40   md:-mt-5'
+          className='w-56 h-36 md:w-60 md:h-40   md:-mt-5'
         />
 
         <NavLink to={"/"} className='navlink -mt-4'>
@@ -52,9 +52,9 @@ const Navigation = ({ mode, darkMode }) => {
       rounded-full absolute bottom-20 left-12'
         >
           <BsMoonStars
-            size={40}
-            className=' mx-[3.2rem] relative p-1 dark:text-slate-50
-        text-slate-800 duration-300'
+            size={42}
+            className='border rounded-full bg-slate-800 dark:bg-slate-300 mx-[3.2rem] relative p-2 dark:text-slate-800
+        text-slate-100 duration-300'
           />
         </button>
 

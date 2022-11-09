@@ -17,7 +17,7 @@ const Sidebar = ({ mode, darkMode }) => {
         <div>
           <button
             onClick={toggle}
-            className='text-slate-700 xl:hidden block dark:text-slate-300 fixed left-2 top-3 '
+            className='text-slate-700 xl:hidden block dark:text-slate-300 fixed left-2 top-3'
           >
             {open ? <IoClose size={30} /> : <HiMenuAlt2 size={30} />}
           </button>
