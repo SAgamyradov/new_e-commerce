@@ -1,11 +1,6 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
-import {
-  BsDoorClosed,
-  BsFillDoorOpenFill,
-  BsFillSunFill,
-  BsMoonStars,
-} from "react-icons/bs";
+import { BsDoorClosed, BsFillDoorOpenFill, BsMoonStars } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { NavLink } from "react-router-dom";
 import logoLight from "../../assets/Oguzly.png";

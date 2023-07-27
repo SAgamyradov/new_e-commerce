@@ -36,7 +36,10 @@ const Shops = ({ mode }) => {
               </p>
             </div>
             <div className='img dark:bg-slate-800'>
-              <img src={rek3} className='w-80 h-28 md:w-96 md:h-56 rounded' />
+              <img
+                src={rek3}
+                className='w-80 h-28 md:w-96 md:h-56 rounded justify-center items-center'
+              />
               <p className='nameDoor'>
                 Nur ýüpek
                 <p className='font-montserratAlternates-bold md:text-lg'>
